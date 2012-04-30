@@ -1,5 +1,3 @@
-require 'nubio'
-
 class BlastJob
   def initialize(file_a, file_b)
       @file_a = file_a 
