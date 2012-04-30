@@ -1,4 +1,3 @@
-require 'yaml'
 require 'synteny_stats.071411'
 
 class BlastParse #Defines class and methods for blast files (attribute accessors allow you to use x.q_start to access @q_start for example)
