@@ -62,6 +62,10 @@ Your command line code should look something like this:
 ruby synteny-based_annotater.031910.rb  -q synteny/<query_vs_subject.synteny file> -s synteny/<subject_vs_query.synteny file> -e Bit_score -m list -l synteny_stats_files/<output statistics filename>
 
 Output:
-Your output should be a tab-delimited file with old annotations and new predicted annotations for your genome of interest
+The output of the synteny statistics file has the following tab-delimited columns:
+Query gene number, subject gene number, average amino acid ID of orthologs, the average bit score of orthologs, the number of syntenous orthologs, the average length of a syntenous block of genes, and the number of orthologs.
+
+The output in the synteny directory has the following tab-delimited columns:
+Query gene, query gene index, subject gene, subject gene index, percent amino acid identity, length_query_gene/length_subject_gene, average normalized bit score, synteny (0 = no synteny, 1 = synteny), block length in number of genes (nil if the gene is not at the end of a syntenous block), orthology designation (ortholog or possible ortholog), query annotation, subject annotation
 
 Known issues: TBA
